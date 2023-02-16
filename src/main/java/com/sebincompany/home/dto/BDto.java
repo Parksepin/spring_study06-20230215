@@ -4,13 +4,13 @@ import java.sql.Timestamp;
 
 public class BDto {
 	
-	private int bid;//게시판 번호(기본키), sequence(mvc_board_seq사용)
+	private int bid;//게시판 번호(기본키), sequence(mvc_board_seq 사용)
 	private String bname;//게시판 글쓴이
 	private String btitle;//게시판 글 제목
 	private String bcontent;//게시판 글 내용
 	private Timestamp bdate;//게시판 글 등록 년월일시간(자동등록)
 	private int bhit;//글 조회수
-	private int bgroup;// 댓글 그룹 이름(원글의 게시판 글번호)
+	private int bgroup;//댓글 그룹 이름(원글의 게시판 글번호)
 	private int bstep;//댓글 단계(댓글 계층 위치)
 	private int bindent;//댓글별 들여쓰기 횟수
 	
@@ -104,6 +104,7 @@ public class BDto {
 	public void setBindent(int bindent) {
 		this.bindent = bindent;
 	}
+	
 	
 
 }

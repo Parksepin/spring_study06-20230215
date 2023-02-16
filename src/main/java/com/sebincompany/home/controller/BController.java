@@ -7,19 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.sebincompany.home.command.BCommand;
 import com.sebincompany.home.command.BListCommand;
 
-
 @Controller
 public class BController {
 	
 	BCommand command = null;
 	
-	@RequestMapping(value="/")
+	@RequestMapping(value = "/")
 	public String index() {
 		
 		return "index";
 	}
 	
-	@RequestMapping(value="/list")
+	@RequestMapping(value = "/list")
 	public String list(Model model) {
 		
 		command = new BListCommand();
@@ -27,4 +26,5 @@ public class BController {
 		
 		return "list";
 	}
+
 }
